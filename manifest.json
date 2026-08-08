@@ -2,8 +2,8 @@
   "name": "BaraShop - Los clasificados de Baradero",
   "short_name": "BaraShop",
   "description": "Clasificados hiperlocales de Baradero, Alsina, Santa Coloma y Portela",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
@@ -11,25 +11,25 @@
   "lang": "es-AR",
   "icons": [
     {
-      "src": "/assets/img/icons/icon-192.png",
+      "src": "assets/img/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/img/icons/icon-512.png",
+      "src": "assets/img/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/img/icons/icon-maskable-192.png",
+      "src": "assets/img/icons/icon-maskable-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/img/icons/icon-maskable-512.png",
+      "src": "assets/img/icons/icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

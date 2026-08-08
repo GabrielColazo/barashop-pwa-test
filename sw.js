@@ -5,14 +5,14 @@
 const CACHE_NAME = 'barashop-static-v1'; // ⚠️ subir el número (v2, v3...) en cada deploy grande de CSS/JS
 
 const STATIC_ASSETS = [
-  '/css/main.css',
-  '/js/supabase.js',
-  '/js/auth.js',
-  '/js/anuncios.js',
-  '/assets/img/icons/icon-192.png',
-  '/assets/img/icons/icon-512.png',
-  '/assets/img/icons/icon-maskable-192.png',
-  '/assets/img/icons/icon-maskable-512.png'
+  'css/main.css',
+  'js/supabase.js',
+  'js/auth.js',
+  'js/anuncios.js',
+  'assets/img/icons/icon-192.png',
+  'assets/img/icons/icon-512.png',
+  'assets/img/icons/icon-maskable-192.png',
+  'assets/img/icons/icon-maskable-512.png'
 ];
 
 // Instalación: precachea los assets base
@@ -53,7 +53,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   // Solo assets estáticos: cache-first, con fallback a red
-  const isStaticAsset = STATIC_ASSETS.some((asset) => url.pathname === asset);
+  const isStaticAsset = STATIC_ASSETS.some((asset) => url.pathname.endsWith(asset));
   if (isStaticAsset) {
     event.respondWith(
       caches.match(event.request).then((cached) => cached || fetch(event.request))
